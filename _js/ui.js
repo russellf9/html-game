@@ -5,6 +5,7 @@ var BubbleShoot = window.BubbleShoot || {};
 BubbleShoot.ui = (function($) {
     var ui = {
         BUBBLE_DIMS: 50, //44,
+        ROW_HEIGHT: 45, //40,
         init: function() {
         },
         hideDialog: function() {
@@ -40,6 +41,29 @@ BubbleShoot.ui = (function($) {
                     duration: duration,
                     easing: 'linear'
                 });
+        },
+        drawBoard: function(board) {
+            var rows = board.getRows(),
+                gameArea = $('#board');
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                for (var j = 0; j < row.length; j++) {
+                    var bubble = row[j];
+                    if (bubble) {
+                        var sprite = bubble.getSprite();
+                        gameArea.append(sprite);
+                        var left = j * ui.BUBBLE_DIMS / 2,
+                            top = i * ui.ROW_HEIGHT;
+                        sprite.css({
+                            left: left,
+                            top: top
+                        });
+                    }
+                }
+            }
+        },
+        drawBubblesRemaining: function(numBubbles) {
+            $('#bubbles_remaining').text(numBubbles);
         }
     };
     return ui;
