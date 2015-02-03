@@ -11,18 +11,24 @@
     top: 470px;
 }
 
+/*55 x 55*/
 .bubble_0 {
-    background-position: -5px -5px;
+    background-position: -6px -5px;
 }
+
+/*// background-position: -5px -5px;*/
 .bubble_1 {
-    background-position: -60px -5px;
+    background-position: -6px -60px;
 }
 .bubble_2 {
-    background-position: -5px -60px;
+    background-position: -6px -115px;
 }
 .bubble_3 {
-    background-position: -60px -60px;
+    background-position: -6px -170px;
 }
 .bubble_4 {
-    background-position: -60px -7px;
+    background-position: -61px -5px;
+}
+.bubble_4 {
+    background-position: -61px -60px;
 }
