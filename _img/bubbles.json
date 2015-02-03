@@ -133,7 +133,7 @@
 	"version": "13.1.0.226",
 	"image": "bubbles.png",
 	"format": "RGBA8888",
-	"size": {"w":256,"h":256},
+	"size": {"w":225,"h":240},
 	"scale": "1"
 }
 }
