@@ -4,40 +4,136 @@
 {
 	"frame": {"x":5,"y":5,"w":50,"h":50},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
-	"sourceSize": {"w":50,"h":50}
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":4,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
 },
 "bubble instance 10001":
 {
 	"frame": {"x":60,"y":5,"w":50,"h":50},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
-	"sourceSize": {"w":50,"h":50}
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":4,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
 },
 "bubble instance 10002":
 {
-	"frame": {"x":5,"y":60,"w":50,"h":50},
+	"frame": {"x":115,"y":5,"w":50,"h":50},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
-	"sourceSize": {"w":50,"h":50}
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":4,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
 },
 "bubble instance 10003":
 {
-	"frame": {"x":60,"y":60,"w":50,"h":50},
+	"frame": {"x":170,"y":5,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":4,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10004":
+{
+	"frame": {"x":5,"y":60,"w":50,"h":54},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
-	"sourceSize": {"w":50,"h":50}
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10005":
+{
+	"frame": {"x":60,"y":60,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10006":
+{
+	"frame": {"x":115,"y":60,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10007":
+{
+	"frame": {"x":170,"y":60,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10008":
+{
+	"frame": {"x":5,"y":119,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10009":
+{
+	"frame": {"x":60,"y":119,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10010":
+{
+	"frame": {"x":115,"y":119,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10011":
+{
+	"frame": {"x":170,"y":119,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10012":
+{
+	"frame": {"x":5,"y":178,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10013":
+{
+	"frame": {"x":60,"y":178,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10014":
+{
+	"frame": {"x":115,"y":178,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
+},
+"bubble instance 10015":
+{
+	"frame": {"x":170,"y":178,"w":50,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+	"sourceSize": {"w":50,"h":54}
 }},
 "meta": {
 	"app": "Adobe Flash Professional",
 	"version": "13.1.0.226",
 	"image": "bubbles.png",
 	"format": "RGBA8888",
-	"size": {"w":128,"h":128},
+	"size": {"w":256,"h":256},
 	"scale": "1"
 }
 }
