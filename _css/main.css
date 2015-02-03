@@ -25,6 +25,13 @@ body {
     clip: auto;
     overflow: hidden;
 }
+#board {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    width: 760px;
+    height: 620px;
+}
 #footer_bar
 {
     position: absolute;

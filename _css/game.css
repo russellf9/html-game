@@ -1,0 +1,25 @@
+.bubble {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../_img/bubbles.png');
+    /*border: solid 1px black;*/
+}
+
+.cur_bubble {
+    left: 360px;
+    top: 470px;
+}
+
+.bubble_0 {
+    background-position: -5px -5px;
+}
+.bubble_1 {
+    background-position: -60px -5px;
+}
+.bubble_2 {
+    background-position: -5px -60px;
+}
+.bubble_3 {
+    background-position: -60px -60px;
+}
