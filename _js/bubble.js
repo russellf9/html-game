@@ -37,7 +37,7 @@ BubbleShoot.Bubble = (function($) {
         }
         var sprite = $(document.createElement('div'));
         sprite.addClass('bubble');
-        sprite.addClass('bubble_0');
+        sprite.addClass('bubble_' + type);
         var bubble = new Bubble(row, column, type, sprite);
         return bubble;
     };
