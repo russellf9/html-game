@@ -31,15 +31,23 @@ BubbleShoot.Game = (function($) {
             },
             clickGameScreen = function(event) {
                 var angle = BubbleShoot.ui.getBubbleAngle(curBubble.getSprite(), event),
-                duration = 750,
+                    duration = 750,
                     distance = 1000,
-                    distX = Math.sin(angle) * distance,
-                    distY = Math.cos(angle) * distance,
-                    bubbleCoords = BubbleShoot.ui.getBubbleCoords(curBubble.getSprite()),
-                    coords = {
-                        x: bubbleCoords.left + distX,
-                        y: bubbleCoords.top - distY
-                    };
+                    coords,
+                    collision = BubbleShoot.CollisionDetector.findIntersection(curBubble, board, angle);
+                if (collision) {
+                    coords = collision.coords;
+                    duration = Math.round(duration * collision.distToCollision / distance);
+                    board.addBubble(curBubble,coords);
+                } else {
+                    var distX = Math.sin(angle) * distance,
+                        distY = Math.cos(angle) * distance,
+                        bubbleCoords = BubbleShoot.ui.getBubbleCoords(curBubble.getSprite()),
+                        coords = {
+                            x: bubbleCoords.left + distX,
+                            y: bubbleCoords.top - distY
+                        };
+                }
                 BubbleShoot.ui.fireBubble(curBubble, coords, duration);
                 curBubble = getNextBubble();
             };

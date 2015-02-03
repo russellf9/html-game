@@ -14,8 +14,21 @@ BubbleShoot.Bubble = (function($) {
         this.getCol = function() {
             return column;
         };
+        this.setCol = function(colIn) {
+            column = colIn;
+        };
         this.getRow = function() {
             return row;
+        };
+        this.setRow = function(rowIn) {
+            row = rowIn;
+        };
+        this.getCoords = function() {
+            var coords = {
+                left: that.getCol() * BubbleShoot.ui.BUBBLE_DIMS / 2 + BubbleShoot.ui.BUBBLE_DIMS / 2,
+                top: that.getRow() * BubbleShoot.ui.ROW_HEIGHT + BubbleShoot.ui.BUBBLE_DIMS / 2
+            };
+            return coords;
         };
     };
     Bubble.create = function(row, column, type) {
