@@ -1,6 +1,6 @@
 .bubble {
     position: absolute;
-    width: 50px;
+    width: 51px;
     height: 50px;
     background-image: url('../_img/bubbles.png');
     /*border: solid 1px black;*/
@@ -10,29 +10,31 @@
     left: 360px;
     top: 470px;
 }
-
-/*55 x 55*/
+/* x y */
+/* diff 56 x 55*/
 .bubble_0 {
-    background-position: -6px -5px;
+    background-position: -5px -5px;
 }
 
 /*// background-position: -5px -5px;*/
 .bubble_1 {
-    background-position: -6px -60px;
+    background-position: -5px -60px;
 }
 .bubble_2 {
-    background-position: -6px -115px;
+    background-position: -5px -115px;
 }
 .bubble_3 {
-    background-position: -6px -170px;
+    background-position: -5px -170px;
 }
+/* for testing the position for next `frame`*/
 .bubble_4 {
     background-position: -61px -5px;
 }
-.bubble_4 {
+.bubble_5 {
     background-position: -61px -60px;
 }
-/*"w":51,"h":50*/
-/*x 117 -  173   DIFF 56 - w51 + 5 margin */
 
-/*y 5 - 60   DIFF 55 H50 + 5 MARGIN */
+.bubble_8 {
+    background-position: -117px -5px;
+}
+
