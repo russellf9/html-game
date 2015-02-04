@@ -1,6 +1,7 @@
 body {
     margin: 0;
 }
+
 #page {
     position: absolute;
     left: 0;
@@ -8,23 +9,28 @@ body {
     width: 1000px;
     height: 738px;
 }
+
 #top_bar {
     position: absolute;
     left: 0;
     top: 0;
     width: 1000px;
-    height: 70px; background-color: #369;
+    height: 70px;
+    background-color: #369;
     color: #fff;
 }
+
 #game {
     position: absolute;
     left: 0px;
     top: 70px;
     width: 1000px;
-    height: 620px; background-color: #fff;
+    height: 620px;
+    background-color: #fff;
     clip: auto;
     overflow: hidden;
 }
+
 #board {
     position: absolute;
     left: 120px;
@@ -32,8 +38,8 @@ body {
     width: 760px;
     height: 620px;
 }
-#footer_bar
-{
+
+#footer_bar {
     position: absolute;
     left: 0;
     top: 690px;
@@ -41,6 +47,7 @@ body {
     height: 48px;
     background-color: #369;
 }
+
 .dialog {
     position: absolute;
     left: 300px;
@@ -55,13 +62,14 @@ body {
     text-align: center;
     display: none;
 }
+
 .dialog h2 {
     font-size: 28px;
     color: #fff;
     margin: 20px 0 20px;
 }
-.but_start_game
-{
+
+.but_start_game {
     position: absolute;
     left: 100px;
     top: 360px;
@@ -76,16 +84,16 @@ body {
     font-weight: bold;
     text-shadow: 0px 1px 1px #f99;
 }
-.but_start_game:hover
-{
+
+.but_start_game:hover {
     background-color: #f33;
 }
-#start_game
-{
+
+#start_game {
     display: block;
 }
-#bubbles_remaining
-{
+
+#bubbles_remaining {
     position: absolute;
     left: 479px;
     top: 520px;
@@ -94,4 +102,19 @@ body {
     font-weight: bold;
     color: #000;
     text-align: center;
+}
+
+.button {
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out , -moz-transform 0.2s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out, -ms-transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #900;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
