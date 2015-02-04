@@ -30,7 +30,8 @@
     "by" : true,
     "require" : true,
     "window" : true,
-    "jQuery" :true
+    "jQuery" :true,
+    "$" : true
   }
 }
 
