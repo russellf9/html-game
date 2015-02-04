@@ -32,18 +32,18 @@ BubbleShoot.Bubble = (function($) {
         };
         this.animatePop = function() {
             var top = type * that.getSprite().height();
-            top = top - 5; // trying to hack this...
+           // top = top + 5; // trying to hack this...
             console.log('top: ', top);
             this.getSprite().css(Modernizr.prefixed('transform'), 'rotate(' + (Math.
                 random() * 360) + 'deg)');
             setTimeout(function() {
-               that.getSprite().css('background-position', '-60px -' + top + 'px');
+               that.getSprite().css('background-position', '-61px -' + top + 'px');
             }, 125);
             setTimeout(function() {
-                that.getSprite().css('background-position', '-115px -' + top + 'px');
+                that.getSprite().css('background-position', '-117px -' + top + 'px');
             }, 150);
             setTimeout(function() {
-                that.getSprite().css('background-position', '-170px -' + top + 'px');
+                that.getSprite().css('background-position', '-173px -' + top + 'px');
             }, 175);
             setTimeout(function() {
                 that.getSprite().remove();
