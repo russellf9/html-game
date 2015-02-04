@@ -46,7 +46,7 @@ BubbleShoot.Board = (function($) {
                 }
                 return bubbles;
             };
-            this.getGroup = function(bubble, found) {
+            this.getGroup = function(bubble, found, differentColor) {
                 var curRow = bubble.getRow();
                 if (!found[curRow]) {
                     found[curRow] = {};
@@ -63,16 +63,45 @@ BubbleShoot.Board = (function($) {
                     surrounding = that.getBubblesAround(curRow, curCol);
                 for (var i = 0; i < surrounding.length; i++) {
                     var bubbleAt = surrounding[i];
-                    if (bubbleAt.getType() == bubble.getType()) {
-                        found = that.getGroup(bubbleAt, found);
+                    if (bubbleAt.getType() == bubble.getType() || differentColor) {
+                        found = that.getGroup(bubbleAt, found, differentColor);
                     }
                 }
                 return found;
             };
-            this.popBubbleAt = function(rowNum,colNum){
+            this.popBubbleAt = function(rowNum, colNum) {
                 var row = rows[rowNum];
                 delete row[colNum];
             };
+            this.findOrphans = function() {
+                var connected = [];
+                var groups = [];
+                var rows = that.getRows();
+                for (var i = 0; i < rows.length; i++) {
+                    connected[i] = [];
+                }
+                for (var i = 0; i < rows[0].length; i++) {
+                    var bubble = that.getBubbleAt(0, i);
+                    if (bubble && !connected[0][i]) {
+                        var group = that.getGroup(bubble, {}, true);
+                        $.each(group.list, function() {
+                            connected[this.getRow()][this.getCol()] = true;
+                        });
+                    }
+                }
+                var orphaned = [];
+                for (var i = 0; i < rows.length; i++) {
+                    for (var j = 0; j < rows[i].length; j++) {
+                        var bubble = that.getBubbleAt(i, j);
+                        if (bubble && !connected[i][j]) {
+                            orphaned.push(bubble);
+                        }
+                    }
+                }
+                return orphaned;
+            };
+
+
             return this;
         },
         createLayout = function() {
